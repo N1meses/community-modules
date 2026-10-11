@@ -23,7 +23,7 @@ in
 
     finit.services.amnezia-vpn = {
       description = "AmneziaVPN daemon";
-      runlevels = "2345";
+      runlevel = "2345";
       command = "${cfg.package}/bin/AmneziaVPN-service";
       path = with pkgs; [
         procps
