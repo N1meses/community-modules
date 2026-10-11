@@ -142,7 +142,7 @@ in
     finit.services.xinetd = {
       description = "xinetd server";
       conditions = [ "services/syslogd/ready" ];
-      runlevels = "34";
+      runlevel = "34";
       path = [ pkgs.xinetd ];
       command = "${pkgs.xinetd} -syslog daemon -dontfork -stayalive -f ${configFile}";
     };

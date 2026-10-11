@@ -37,7 +37,7 @@ in
 
     finit.services.polkit-soteria = {
       description = "Soteria, Polkit authentication agent for any desktop environment";
-      runlevels = "34";
+      runlevel = "34";
       conditions = "service/polkit/ready";
       command = lib.getExe cfg.package;
       log = true;
